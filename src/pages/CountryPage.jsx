@@ -38,7 +38,12 @@ function CountryPage() {
 
   return (
     <div className="country-page">
-      <button type="button" className="back-btn" onClick={() => navigate(-1)}>
+      <button
+        type="button"
+        className="back-btn"
+        onClick={() => navigate(-1)}
+        aria-label="Go back to previous page"
+      >
         Back
       </button>
 
