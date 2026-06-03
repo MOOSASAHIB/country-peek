@@ -100,6 +100,20 @@
   color: var(--text-label);
 }
 
+.fav-btn {
+  margin-top: 0.75rem;
+  padding: 0.25rem 0;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  background: none;
+  cursor: pointer;
+}
+
+.fav-btn--saved {
+  color: #e53e3e;
+}
+
 .home__status {
   margin-top: 1.25rem;
   padding: 0.5rem 0;
@@ -108,6 +122,29 @@
 
 .home__status--error {
   color: var(--error);
+}
+
+.favourites {
+  padding: 2rem;
+}
+
+.favourites__title {
+  margin: 0 0 0.5rem;
+  color: var(--text-strong);
+}
+
+.favourites-empty {
+  padding: 3rem 2rem;
+}
+
+.favourites-empty p {
+  margin: 0 0 1rem;
+  color: var(--text-muted);
+}
+
+.favourites-empty a {
+  color: var(--accent);
+  font-weight: 700;
 }
 
 .country-page {
@@ -234,6 +271,8 @@
   }
 
   .home,
+  .favourites,
+  .favourites-empty,
   .country-page,
   .page-placeholder,
   .not-found {
