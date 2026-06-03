@@ -4,8 +4,8 @@
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 2rem;
-  color: #ffffff;
-  background: #2563eb;
+  color: var(--header-text);
+  background: var(--header-bg);
 }
 
 .header__brand {
@@ -15,6 +15,7 @@
 
 .header__nav {
   display: flex;
+  align-items: center;
   gap: 1.25rem;
   font-weight: 600;
 }
@@ -37,15 +38,15 @@
 .search-bar__input {
   width: min(100%, 480px);
   padding: 0.85rem 1rem;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--input-border);
   border-radius: 8px;
-  color: #111827;
-  background: #ffffff;
+  color: var(--input-text);
+  background: var(--input-bg);
 }
 
 .search-bar__input:focus {
-  border-color: #2563eb;
-  outline: 3px solid rgba(37, 99, 235, 0.16);
+  border-color: var(--accent);
+  outline: 3px solid color-mix(in srgb, var(--accent) 16%, transparent);
 }
 
 .cards-grid {
@@ -59,15 +60,15 @@
   display: block;
   color: inherit;
   text-decoration: none;
-  background: #ffffff;
+  background: var(--card-bg);
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px var(--shadow);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 24px var(--shadow-hover);
 }
 
 .card__flag {
@@ -85,28 +86,28 @@
   margin: 0 0 0.75rem;
   font-size: 1.1rem;
   font-weight: 700;
-  color: #111827;
+  color: var(--text-strong);
 }
 
 .card__body p {
   margin: 0.25rem 0;
   font-size: 0.875rem;
-  color: #64748b;
+  color: var(--text-muted);
 }
 
 .card__body p span {
   font-weight: 600;
-  color: #374151;
+  color: var(--text-label);
 }
 
 .home__status {
   margin-top: 1.25rem;
   padding: 0.5rem 0;
-  color: #64748b;
+  color: var(--text-muted);
 }
 
 .home__status--error {
-  color: #dc2626;
+  color: var(--error);
 }
 
 .country-page {
@@ -118,17 +119,17 @@
 .back-btn {
   margin-bottom: 2rem;
   padding: 0.5rem 1.25rem;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--border);
   border-radius: 6px;
-  color: #374151;
+  color: var(--text-label);
   font-weight: 600;
-  background: #ffffff;
+  background: var(--card-bg);
   cursor: pointer;
   transition: background 0.15s ease;
 }
 
 .back-btn:hover {
-  background: #f1f5f9;
+  background: var(--btn-hover-bg);
 }
 
 .country-page__layout {
@@ -141,19 +142,19 @@
 .country-page__flag {
   width: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px var(--shadow);
 }
 
 .country-page__name {
   margin: 0 0 0.5rem;
   font-size: 2rem;
   font-weight: 800;
-  color: #111827;
+  color: var(--text-strong);
 }
 
 .country-page__official {
   margin: 0 0 1.5rem;
-  color: #64748b;
+  color: var(--text-muted);
 }
 
 .country-page__details {
@@ -166,18 +167,18 @@
 .country-page__details p {
   margin: 0.4rem 0;
   font-size: 0.95rem;
-  color: #374151;
+  color: var(--text-label);
 }
 
 .country-page__details span {
   font-weight: 700;
-  color: #111827;
+  color: var(--text-strong);
 }
 
 .country-page__borders p {
   margin: 0 0 0.75rem;
   font-weight: 700;
-  color: #111827;
+  color: var(--text-strong);
 }
 
 .country-page__border-badges {
@@ -188,21 +189,21 @@
 
 .border-badge {
   padding: 0.25rem 0.75rem;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--border);
   border-radius: 4px;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #374151;
-  background: #f8fafc;
+  color: var(--text-label);
+  background: var(--badge-bg);
 }
 
 .page-status {
   padding: 3rem 2rem;
-  color: #64748b;
+  color: var(--text-muted);
 }
 
 .page-status--error {
-  color: #dc2626;
+  color: var(--error);
 }
 
 .page-placeholder,
@@ -212,15 +213,16 @@
 
 .not-found h2 {
   margin: 0 0 0.75rem;
+  color: var(--text-strong);
 }
 
 .not-found p {
   margin: 0 0 1rem;
-  color: #64748b;
+  color: var(--text-muted);
 }
 
 .not-found a {
-  color: #2563eb;
+  color: var(--accent);
   font-weight: 700;
 }
 
